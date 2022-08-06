@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <h3>UPDATE</h3>
+    <input type="text" name="name" class="form-control" placeholder="Name of the task"><br>
+    <input type="text" name="priority"  class="form-control" placeholder="Your priority"><br></div>
+    <input type="Submit" class="btn btn-success"><br>
+</form>
+{% endblock %}
+
